@@ -5,9 +5,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import me.jfenn.slideactionview.SlideActionListener;
 import me.jfenn.slideactionview.SlideActionView;
 
-public class MainActivity extends AppCompatActivity implements SlideActionView.SlideActionListener {
+public class MainActivity extends AppCompatActivity implements SlideActionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

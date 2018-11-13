@@ -284,9 +284,4 @@ public class SlideActionView extends View implements View.OnTouchListener {
         return false;
     }
 
-    public interface SlideActionListener {
-        void onSlideLeft();
-
-        void onSlideRight();
-    }
 }
