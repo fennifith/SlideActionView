@@ -4,6 +4,10 @@ SlideActionView is a simple widget that provides a nice slide-to-left/right inte
 
 For testing and experimentation purposes, a sample apk can be downloaded [here](https://jfenn.me/projects/slideactionview).
 
+|Sample App|Use in Alarmio|
+|------|------|
+|![img](./.github/images/sample.png?raw=true)|![img](./.github/images/alert.gif?raw=true)|
+
 ## Usage
 
 ### Setup
