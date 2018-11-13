@@ -17,9 +17,9 @@ import java.util.Map;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
-import me.jfenn.slideactionview.utils.ImageUtils;
-import me.jfenn.slideactionview.utils.anim.AnimatedFloat;
-import me.jfenn.slideactionview.utils.ConversionUtils;
+import me.jfenn.androidutils.DimenUtils;
+import me.jfenn.androidutils.ImageUtils;
+import me.jfenn.androidutils.anim.AnimatedFloat;
 
 public class SlideActionView extends View implements View.OnTouchListener {
 
@@ -62,10 +62,10 @@ public class SlideActionView extends View implements View.OnTouchListener {
     }
 
     private void init() {
-        handleRadius = ConversionUtils.dpToPx(12);
-        expandedHandleRadius = ConversionUtils.dpToPx(32);
-        selectionRadius = ConversionUtils.dpToPx(42);
-        rippleRadius = ConversionUtils.dpToPx(140);
+        handleRadius = DimenUtils.dpToPx(12);
+        expandedHandleRadius = DimenUtils.dpToPx(32);
+        selectionRadius = DimenUtils.dpToPx(42);
+        rippleRadius = DimenUtils.dpToPx(140);
 
         selected = new AnimatedFloat(0);
         ripples = new HashMap<>();
