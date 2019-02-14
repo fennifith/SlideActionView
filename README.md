@@ -1,6 +1,8 @@
 SlideActionView is a simple widget that provides a nice slide-to-left/right interaction. This is a part of my efforts to modularize some of the things that I write; it was originally a part of [Alarmio](https://jfenn.me/projects/alarmio), and has been separated into its own library.
 
-[![](https://jitpack.io/v/me.jfenn/SlideActionView.svg)](https://jitpack.io/#me.jfenn/SlideActionView)
+[![JitPack](https://jitpack.io/v/me.jfenn/SlideActionView.svg)](https://jitpack.io/#me.jfenn/SlideActionView)
+[![Build Status](https://travis-ci.com/fennifith/SlideActionView.svg?branch=master)](https://travis-ci.com/fennifith/SlideActionView)
+[![Discord](https://img.shields.io/discord/514625116706177035.svg?logo=discord&colorB=7289da)](https://discord.gg/ucBGWDy)
 
 For testing and experimentation purposes, a sample apk can be downloaded [here](https://jfenn.me/projects/slideactionview).
 
