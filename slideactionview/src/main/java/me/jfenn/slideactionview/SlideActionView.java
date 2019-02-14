@@ -6,6 +6,8 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -135,8 +137,7 @@ public class SlideActionView extends View implements View.OnTouchListener {
      * @param drawable          The Drawable to use as an icon.
      */
     public void setRightIcon(Drawable drawable) {
-        rightImage = ImageUtils.drawableToBitmap(drawable);
-        postInvalidate();
+        setRightIcon(ImageUtils.drawableToBitmap(drawable));
     }
 
     /**
@@ -145,7 +146,8 @@ public class SlideActionView extends View implements View.OnTouchListener {
      * @param bitmap            The Bitmap to use as an icon.
      */
     public void setRightIcon(Bitmap bitmap) {
-
+        rightImage = bitmap;
+        postInvalidate();
     }
 
     /**
@@ -191,6 +193,7 @@ public class SlideActionView extends View implements View.OnTouchListener {
      */
     public void setIconColor(@ColorInt int iconColor) {
         bitmapPaint.setColor(iconColor);
+        bitmapPaint.setColorFilter(new PorterDuffColorFilter(iconColor, PorterDuff.Mode.SRC_IN));
     }
 
     /**
